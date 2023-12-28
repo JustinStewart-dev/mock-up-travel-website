@@ -1,0 +1,207 @@
+/*
+Name: Justin Stewart
+Date: 5/1/2023
+CIT 155
+File Name: style.css
+*/
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin: 1em 0 0.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 1em 0 0.5em;
+}
+
+ul {
+    font-size:1.4em;
+    line-height: 50px;
+}
+
+p, ol {
+    font-size: 1.4em;
+    line-height: 1.5;
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #0077be;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1em 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.5em;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+th {
+    background-color: #eee;
+    font-weight: bold;
+    text-align: left;
+}
+
+ul, ol {
+    list-style-type: disc;
+    margin-left: 1.5em;
+}
+
+img {
+    max-width: 45%;
+    border: 2px solid black;
+    
+}
+
+.image-container {
+    display: inline-block; 
+    text-align: center;
+    
+}
+
+.text-container {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+
+.p-height {
+    line-height: 50px;
+}
+
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding-bottom: 30px;
+  }
+  
+.review {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.801);
+}
+
+.rating {
+    font-size: 2em;
+    color: gold;
+    text-shadow: 0px 2px 2px black;
+}
+
+video {
+    width:60%;
+    padding-left:355px;
+}
+
+/* Layout styles */
+header {
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 1em;
+}
+
+main {
+    margin: 2em;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input,
+form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form input[type="submit"] {
+    background-color: #0077be;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    nav {
+        flex-wrap: wrap;
+    }
+
+    nav li {
+        margin: 0.5em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+}
